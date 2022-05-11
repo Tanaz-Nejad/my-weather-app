@@ -8,6 +8,9 @@ h1 {
   margin-top: 10px;
   margin-left: 5px;
 }
+ul {
+  list-style: none;
+}
 .weather-app {
   border: 5px solid #714288;
   border-radius: 5px;
@@ -16,7 +19,7 @@ h1 {
   margin: 20px auto;
   max-width: 600px;
   background: #fff;
-  height: 400px;
+  height: 500px;
 }
 .dateAndWeather {
   color: #caabd8;
@@ -119,4 +122,29 @@ h1 {
   background: #caabd8;
   color: #9873b9;
   border: 2px solid #faf4e1;
+}
+
+.day_block {
+  float: left;
+  padding: 10px 10px 10px 3px;
+  width: 14%;
+  color: #caabd8;
+}
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.day_block-date {
+  text-align: center;
+  font-size: 18px;
+}
+.day_block-img {
+  display: block;
+  margin: 0 auto;
+  padding-left: 25px;
+}
+.day_block-temp {
+  text-align: center;
+  font-size: 18px;
 }
