@@ -1,0 +1,122 @@
+body {
+  font-family: "Akshar", sans-serif;
+}
+h1 {
+  font-size: 40px;
+  color: #714288;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.weather-app {
+  border: 5px solid #714288;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  background: #fff;
+  height: 400px;
+}
+.dateAndWeather {
+  color: #caabd8;
+  line-height: 1;
+  list-style: none;
+  padding: 0px;
+  margin-left: 5px;
+}
+.temperature {
+  font-size: 64px;
+  color: #714288;
+  position: relative;
+  top: 20px;
+  left: -5px;
+}
+.weather-icon {
+  margin: 20px 20px 10px 0px;
+  width: 100px;
+}
+.unitLink {
+  font-size: 16px;
+  color: #714288;
+  position: relative;
+  top: -15px;
+  left: -10px;
+  text-decoration: none;
+}
+.weather-conditions {
+  color: #caabd8;
+  text-align: left;
+  margin-top: 12px;
+  font-weight: lighter;
+  list-style: none;
+  font-size: 14px;
+  padding: 20px;
+  position: relative;
+  right: -40px;
+}
+.buttons-phw {
+  padding: 20px 10px 10px 10px;
+}
+.precipButton,
+.humidButton,
+.windButton {
+  border-right: 3px solid #faf4e1;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  background-color: transparent;
+  max-width: 220px;
+  padding: 0px 5px 0px 5px;
+  color: #9873b9;
+}
+.precipButton:hover,
+.humidButton:hover,
+.windButton:hover {
+  color: #caabd8;
+  cursor: pointer;
+}
+.windButton {
+  border-right: none;
+}
+.cityInput {
+  width: 320px;
+  border: 2px solid #faf4e1;
+  box-shadow: 2px 2px 5px;
+}
+.submitSearch {
+  width: 70px;
+  border: 2px solid #faf4e1;
+  box-shadow: 1px 1px 2px #9b9b9b;
+  border-radius: 8px;
+  background-color: #9873b9;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  color: #faf4e1;
+  padding: 2px;
+  display: inline;
+}
+.submitSearch:hover {
+  background: #caabd8;
+  color: #9873b9;
+  border: 2px solid #faf4e1;
+}
+.currentLocationButton {
+  display: inline;
+  width: 140px;
+  margin-left: 30px;
+  font-size: 16px;
+  border: 2px solid #faf4e1;
+  box-shadow: 1px 1px 2px #9b9b9b;
+  border-radius: 8px;
+  background-color: #9873b9;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  color: #faf4e1;
+  padding: 2px;
+}
+.currentLocationButton:hover {
+  background: #caabd8;
+  color: #9873b9;
+  border: 2px solid #faf4e1;
+}
