@@ -59,7 +59,11 @@
         </div>
         <div class="row">
           <div class="col-6">
-            <img src="img/861077.png" alt="cloudly-icon" class="weather-icon" />
+            <img
+              src="img/colour_main_weather_icon.png"
+              alt="sunny_icon"
+              class="weather-icon"
+            />
             <span class="temperature" id="temperature"> 16 </span>
             <span>
               <a href="#" class="unitLink" id="celcius-link">℃ |</a>
@@ -69,55 +73,60 @@
           <div class="col-6">
             <ul class="weather-conditions">
               <li>Humidity: <span id="humidity">0</span> :%</li>
-              <li>Wind: <span id="wind">0</span>mph</li>
+              <li>Wind: <span id="wind">0</span> mph</li>
             </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="buttons-phw">
-            <button class="precipButton">Precipitation</button>
+            <div class="windHumidityButtons">
             <button class="humidButton">Humidity</button>
             <button class="windButton">Wind</button>
-          </div>
+            </div>
         </div>
-        <div class="clearfix">
-          <div class="day_block">
-            <div class="day_block-date">Mon</div>
-            <div class="day_block-img">🌤</div>
-            <div class="day_block-temp">19℃</div>
-          </div>
-          <div class="day_block">
-            <div class="day_block-date">Tue</div>
-            <div class="day_block-img">💨</div>
-            <div class="day_block-temp">12℃</div>
-          </div>
-          <div class="day_block">
-            <div class="day_block-date">Wed</div>
-            <div class="day_block-img">⛅️</div>
-            <div class="day_block-temp">15℃</div>
-          </div>
-          <div class="day_block">
-            <div class="day_block-date">Thu</div>
-            <div class="day_block-img">☀️</div>
-            <div class="day_block-temp">17℃</div>
-          </div>
-          <div class="day_block">
-            <div class="day_block-date">Fri</div>
-            <div class="day_block-img">⛅️</div>
-            <div class="day_block-temp">12℃</div>
-          </div>
-          <div class="day_block">
-            <div class="day_block-date">Sat</div>
-            <div class="day_block-img">⛅️</div>
-            <div class="day_block-temp">15℃</div>
-          </div>
-          <div class="day_block">
-            <div class="day_block-date">Sun</div>
-            <div class="day_block-img">⛅️</div>
-            <div class="day_block-temp">17℃</div>
-          </div>
+      </div>
+      <div class="clearfix">
+        <div class="day_block">
+          <div class="day_block-date">Mon</div>
+          <img class="day_block-img" src="img/sunny.png" alt= />
+          <div class="day_block-temp">19℃</div>
         </div>
+        <div class="day_block">
+          <div class="day_block-date">Tue</div>
+          <img class="day_block-img" src="img/raining.png" alt= />
+          <div class="day_block-temp">12℃</div>
+        </div>
+        <div class="day_block">
+          <div class="day_block-date">Wed</div>
+          <img class="day_block-img" src="img/windy.png" alt= />
+          <div class="day_block-temp">15℃</div>
+        </div>
+        <div class="day_block">
+          <div class="day_block-date">Thu</div>
+          <img class="day_block-img" src="img/sunny_cloudy.png" alt= />
+          <div class="day_block-temp">17℃</div>
+        </div>
+        <div class="day_block">
+          <div class="day_block-date">Fri</div>
+          <img class="day_block-img" src="img/sunny_cloudy.png" alt= />
+          <div class="day_block-temp">12℃</div>
+        </div>
+        <div class="day_block">
+          <div class="day_block-date">Sat</div>
+          <img class="day_block-img" src="img/raining.png" alt= />
+          <div class="day_block-temp">15℃</div>
+        </div>
+        <div class="day_block">
+          <div class="day_block-date">Sun</div>
+          <img class="day_block-img" src="img/windy.png" alt= />
+          <div class="day_block-temp">17℃</div>
+        </div>
+      </div>
     </div>
+    <p>
+      <small>
+        <a href="https://github.com/Tanaz2202/my-weather-app"
+          >Open Source Code</a
+        >
+        by Tanaz Nejad
+      </small>
+    </p>
     <script src="src/script.js"></script>
   </body>
 </html>

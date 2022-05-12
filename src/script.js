@@ -34,7 +34,6 @@ function formattedDate(date) {
   ];
   let monthIndex = date.getMonth();
   let day = days[dayIndex];
-
   let month = months[monthIndex];
   return `${day} ${dates} ${month} ${hour}:${minutes}`;
 }
@@ -49,7 +48,6 @@ function displayWeather(response) {
     response.data.wind.speed
   );
 }
-
 function searchCity(city) {
   let apiKey = "6ce7450f789843d1a9368eb2e4d194d8";
   let unit = "metric";

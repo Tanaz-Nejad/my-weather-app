@@ -19,7 +19,7 @@ ul {
   margin: 20px auto;
   max-width: 600px;
   background: #fff;
-  height: 500px;
+  height: 480px;
 }
 .dateAndWeather {
   color: #caabd8;
@@ -28,16 +28,15 @@ ul {
   padding: 0px;
   margin-left: 5px;
 }
+.weather-icon {
+  width: 150px;
+}
 .temperature {
   font-size: 64px;
   color: #714288;
   position: relative;
   top: 20px;
-  left: -5px;
-}
-.weather-icon {
-  margin: 20px 20px 10px 0px;
-  width: 100px;
+  left: -10px;
 }
 .unitLink {
   font-size: 16px;
@@ -50,18 +49,17 @@ ul {
 .weather-conditions {
   color: #caabd8;
   text-align: left;
-  margin-top: 12px;
+  margin-top: 17px;
   font-weight: lighter;
   list-style: none;
-  font-size: 14px;
-  padding: 20px;
+  font-size: 18px;
   position: relative;
   right: -40px;
+  line-height: 1;
 }
-.buttons-phw {
-  padding: 20px 10px 10px 10px;
+.windHumidityButtons {
+  margin: 30px 0px 40px 60px;
 }
-.precipButton,
 .humidButton,
 .windButton {
   border-right: 3px solid #faf4e1;
@@ -73,7 +71,6 @@ ul {
   padding: 0px 5px 0px 5px;
   color: #9873b9;
 }
-.precipButton:hover,
 .humidButton:hover,
 .windButton:hover {
   color: #caabd8;
@@ -83,12 +80,12 @@ ul {
   border-right: none;
 }
 .cityInput {
-  width: 320px;
+  width: 100%;
   border: 2px solid #faf4e1;
   box-shadow: 2px 2px 5px;
 }
 .submitSearch {
-  width: 70px;
+  width: 300%;
   border: 2px solid #faf4e1;
   box-shadow: 1px 1px 2px #9b9b9b;
   border-radius: 8px;
@@ -106,7 +103,7 @@ ul {
 }
 .currentLocationButton {
   display: inline;
-  width: 140px;
+  width: 180%;
   margin-left: 30px;
   font-size: 16px;
   border: 2px solid #faf4e1;
@@ -123,7 +120,6 @@ ul {
   color: #9873b9;
   border: 2px solid #faf4e1;
 }
-
 .day_block {
   float: left;
   padding: 10px 10px 10px 3px;
@@ -142,9 +138,12 @@ ul {
 .day_block-img {
   display: block;
   margin: 0 auto;
-  padding-left: 25px;
+  width: 40px;
 }
 .day_block-temp {
   text-align: center;
   font-size: 18px;
+}
+p {
+  text-align: center;
 }
