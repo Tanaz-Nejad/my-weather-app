@@ -39,6 +39,8 @@ function formattedDate(date) {
 }
 
 function displayWeather(response) {
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].description;
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -47,6 +49,7 @@ function displayWeather(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+  console.log(response.data);
 }
 function searchCity(city) {
   let apiKey = "6ce7450f789843d1a9368eb2e4d194d8";
