@@ -32,22 +32,24 @@ ul {
 #description {
   text-transform: capitalize;
 }
-.weather-icon {
+.weather-temperature .weather-icon {
   width: 100px;
 }
-.temperature {
+.weather-temperature .temperature {
   font-size: 58px;
   color: #714288;
-  position: relative;
-  top: 20px;
-  left: -5px;
 }
-.unitLink {
-  font-size: 16px;
-  color: #714288;
+.weather-temperature .units {
   position: relative;
-  top: -10px;
-
+  top: -30px;
+  left: 10px;
+}
+.weather-temperature .active {
+  color: #714288;
+  cursor: default;
+  text-decoration: none;
+}
+.weather-temperature .active:hover {
   text-decoration: none;
 }
 .weather-conditions {
@@ -130,16 +132,16 @@ ul {
   color: #9873b9;
   border: 2px solid #faf4e1;
 }
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
 .day_block {
   float: left;
   padding: 10px 10px 10px 3px;
   width: 14%;
   color: #caabd8;
-}
-.clearfix::after {
-  display: block;
-  clear: both;
-  content: "";
 }
 .day_block-date {
   text-align: center;
@@ -155,7 +157,5 @@ ul {
   font-size: 18px;
 }
 p {
-  position: relative;
-  right: -165px;
-  top: -13px;
+  text-align: center;
 }
