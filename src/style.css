@@ -1,65 +1,69 @@
 body {
-  font-family: "Akshar", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 h1 {
   font-size: 40px;
   color: #714288;
-  font-weight: bold;
+  font-weight: 1000;
   margin-top: 10px;
   margin-left: 5px;
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 6px;
 }
 .weather-app {
-  border: 5px solid #714288;
+  border: 3px solid #714288;
   border-radius: 5px;
   box-shadow: 2px 2px 4px;
   padding: 20px;
   margin: 20px auto;
-  max-width: 600px;
+  max-width: 620px;
   background: #fff;
   height: 480px;
 }
-.dateAndWeather {
+#date,
+#description {
   color: #caabd8;
   line-height: 1;
   list-style: none;
-  padding: 0px;
-  margin-left: 5px;
+}
+#description {
+  text-transform: capitalize;
 }
 .weather-icon {
-  width: 150px;
+  width: 100px;
 }
 .temperature {
-  font-size: 64px;
+  font-size: 58px;
   color: #714288;
   position: relative;
   top: 20px;
-  left: -10px;
+  left: -5px;
 }
 .unitLink {
   font-size: 16px;
   color: #714288;
   position: relative;
-  top: -15px;
-  left: -10px;
+  top: -10px;
+
   text-decoration: none;
 }
 .weather-conditions {
   color: #caabd8;
-  text-align: left;
   margin-top: 17px;
   font-weight: lighter;
   list-style: none;
   font-size: 18px;
   position: relative;
-  right: -40px;
+  right: -32px;
   line-height: 1;
 }
 .windHumidityButtons {
-  margin: 30px 0px 40px 60px;
+  margin: 30px 0px 40px 30px;
 }
+.temperatureButton,
 .humidButton,
 .windButton {
   border-right: 3px solid #faf4e1;
@@ -70,7 +74,9 @@ ul {
   max-width: 220px;
   padding: 0px 5px 0px 5px;
   color: #9873b9;
+  font-size: 14px;
 }
+.temperatureButton:hover,
 .humidButton:hover,
 .windButton:hover {
   color: #caabd8;
@@ -80,21 +86,24 @@ ul {
   border-right: none;
 }
 .cityInput {
-  width: 100%;
+  width: 105%;
   border: 2px solid #faf4e1;
   box-shadow: 2px 2px 5px;
 }
 .submitSearch {
-  width: 300%;
-  border: 2px solid #faf4e1;
+  width: 350%;
+  height: 110%;
+  border: 2px solid #caabd8;
   box-shadow: 1px 1px 2px #9b9b9b;
   border-radius: 8px;
   background-color: #9873b9;
   transition: all 200ms ease-in-out;
   cursor: pointer;
   color: #faf4e1;
-  padding: 2px;
+  padding: 2px 20px;
   display: inline;
+  margin-left: 2px;
+  font-size: 12px;
 }
 .submitSearch:hover {
   background: #caabd8;
@@ -103,17 +112,18 @@ ul {
 }
 .currentLocationButton {
   display: inline;
-  width: 180%;
-  margin-left: 30px;
-  font-size: 16px;
-  border: 2px solid #faf4e1;
+  width: 185%;
+  height: 110%;
+  margin-left: 49px;
+  font-size: 12px;
+  border: 2px solid #caabd8;
   box-shadow: 1px 1px 2px #9b9b9b;
   border-radius: 8px;
   background-color: #9873b9;
   transition: all 200ms ease-in-out;
   cursor: pointer;
   color: #faf4e1;
-  padding: 2px;
+  padding: 2px 3px;
 }
 .currentLocationButton:hover {
   background: #caabd8;
@@ -138,12 +148,14 @@ ul {
 .day_block-img {
   display: block;
   margin: 0 auto;
-  width: 40px;
+  width: 50px;
 }
 .day_block-temp {
   text-align: center;
   font-size: 18px;
 }
 p {
-  text-align: center;
+  position: relative;
+  right: -165px;
+  top: -13px;
 }

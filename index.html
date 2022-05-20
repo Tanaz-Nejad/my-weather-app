@@ -11,12 +11,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Akshar&display=swap"
-      rel="stylesheet"
-    />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
@@ -41,9 +38,8 @@
             <div class="col-2">
               <button
                 class="currentLocationButton"
-                id="current-location-button"
-              >
-                Current Location📍
+                id="current-location-button">Current Location
+            <img src="img/Location_icon.png" alt="location_Icon">
               </button>
             </div>
           </div>
@@ -51,7 +47,7 @@
         <div class="row">
           <div class="col">
             <h1 id="city">London</h1>
-            <ul class="dateAndWeather">
+            <ul>
               <li id="date"></li>
               <li id="description"></li>
             </ul>
@@ -60,25 +56,28 @@
         <div class="row">
           <div class="col-6">
             <img
-              src="img/colour_main_weather_icon.png"
+              src="#"
               alt="sunny_icon"
+              id="icon"
               class="weather-icon"
             />
-            <span class="temperature" id="temperature"> 16 </span>
+            <span class="temperature" id="temperature"></span>
             <span>
               <a href="#" class="unitLink" id="celcius-link">℃ |</a>
               <a href="#" class="unitLink" id="fahrenheit-link">℉</a>
             </span>
+         
           </div>
           <div class="col-6">
             <ul class="weather-conditions">
-              <li>Humidity: <span id="humidity">0</span> :%</li>
-              <li>Wind: <span id="wind">0</span> mph</li>
+              <li>Humidity: <span id="humidity"></span> :%</li>
+              <li>Wind: <span id="wind"></span> mph</li>
             </ul>
             <div class="windHumidityButtons">
+              <button class="temperatureButton">Temperature</button>
             <button class="humidButton">Humidity</button>
             <button class="windButton">Wind</button>
-            </div>
+            </div>            
         </div>
       </div>
       <div class="clearfix">
