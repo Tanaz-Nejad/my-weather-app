@@ -11,9 +11,12 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
@@ -38,8 +41,10 @@
             <div class="col-2">
               <button
                 class="currentLocationButton"
-                id="current-location-button">Current Location
-            <img src="img/Location_icon.png" alt="location_Icon">
+                id="current-location-button"
+              >
+                Current Location
+                <img src="img/Location_icon.png" alt="location_Icon" />
               </button>
             </div>
           </div>
@@ -56,68 +61,44 @@
         <div class="row">
           <div class="col-6">
             <div class="d-flex weather-temperature">
-            <img
-              src="#"
-              alt="sunny_icon"
-              id="icon"
-              class="weather-icon float-left"
-            />
-            <div class="float-left">
-            <strong class="temperature" id="temperature"></strong> 
-            <span class="units"> 
-              <a href="#" class="active" id="celcius-link">℃ |</a>
-              <a href="#" class="active" id="fahrenheit-link">℉</a>
-              </span> 
-            </div>
+              <img
+                src="#"
+                alt="sunny_icon"
+                id="icon"
+                class="weather-icon"
+              />
+                <div class="temperature" id="temperature"></div>
+                <span class="units">
+                  <a href="#" class="active" id="celcius-link">℃ |</a>
+                  <a href="#" class="active" id="fahrenheit-link">℉</a>
+                </span>     
+                 </div>
           </div>
-          </div>
-          <div class="col-6">
-            <ul class="weather-conditions">
-              <li>Humidity: <span id="humidity"></span> :%</li>
-              <li>Wind: <span id="wind"></span> mph</li>
-            </ul>
-            <div class="windHumidityButtons">
-              <button class="temperatureButton">Temperature</button>
+        <div class="col-6">
+          <ul class="weather-conditions">
+            <li>Humidity: <span id="humidity"></span> :%</li>
+            <li>Wind: <span id="wind"></span> mph</li>
+          </ul>
+          <div class="windHumidityButtons">
+            <button class="temperatureButton">Temperature</button>
             <button class="humidButton">Humidity</button>
             <button class="windButton">Wind</button>
-            </div>            
+          </div>
         </div>
       </div>
-      <div class="clearfix">
-        <div class="day_block">
-          <div class="day_block-date">Mon</div>
-          <img class="day_block-img" src="img/sunny.png" alt= />
-          <div class="day_block-temp">19℃</div>
-        </div>
-        <div class="day_block">
-          <div class="day_block-date">Tue</div>
-          <img class="day_block-img" src="img/raining.png" alt= />
-          <div class="day_block-temp">12℃</div>
-        </div>
-        <div class="day_block">
-          <div class="day_block-date">Wed</div>
-          <img class="day_block-img" src="img/windy.png" alt= />
-          <div class="day_block-temp">15℃</div>
-        </div>
-        <div class="day_block">
-          <div class="day_block-date">Thu</div>
-          <img class="day_block-img" src="img/sunny_cloudy.png" alt= />
-          <div class="day_block-temp">17℃</div>
-        </div>
-        <div class="day_block">
-          <div class="day_block-date">Fri</div>
-          <img class="day_block-img" src="img/sunny_cloudy.png" alt= />
-          <div class="day_block-temp">12℃</div>
-        </div>
-        <div class="day_block">
-          <div class="day_block-date">Sat</div>
-          <img class="day_block-img" src="img/raining.png" alt= />
-          <div class="day_block-temp">15℃</div>
-        </div>
-        <div class="day_block">
-          <div class="day_block-date">Sun</div>
-          <img class="day_block-img" src="img/windy.png" alt= />
-          <div class="day_block-temp">17℃</div>
+      <div class="future-forecast" id="future-forecast">
+        <div class="row">
+          <div class="col-2">
+            <div class="future-forecast-date">Thur</div>
+            <img
+              src="http://openweathermap.org/img/wn/02d@2x.png"
+              alt="futureTemperature"
+              class="future-forecast-icon"
+              width="50px"
+            />
+            <span class="max-temperature">18°</span>
+            <span class="min-temperature">12°</span>
+          </div>
         </div>
       </div>
     </div>
