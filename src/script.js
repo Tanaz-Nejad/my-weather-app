@@ -1,12 +1,6 @@
-function formattedDate(date) {
-  let hour = date.getHours();
-  if (hour < 10) {
-    hour = `0${hour}`;
-  }
-  let minutes = date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
+function formattedDate(timestamp) {
+  let date = new Date();
+  let dayIndex = date.getDay();
   let days = [
     "Sunday",
     "Monday",
@@ -16,26 +10,16 @@ function formattedDate(date) {
     "Friday",
     "Saturday",
   ];
-  let dayIndex = date.getDay();
-  let dates = date.getDate();
-  let months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-  let monthIndex = date.getMonth();
   let day = days[dayIndex];
-  let month = months[monthIndex];
-  return `${day} ${dates} ${month} ${hour}:${minutes}`;
+  let hour = date.getHours();
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  return `${day} ${hour}:${minutes}`;
 }
 
 function displayWeather(response) {
@@ -45,9 +29,9 @@ function displayWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
+  let dateElement = document.querySelector("#date");
 
   celiusTemperature = response.data.main.temp;
-  console.log(celiusTemperature);
   descriptionElement.innerHTML = response.data.weather[0].description;
   cityElement.innerHTML = response.data.name;
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
@@ -58,6 +42,8 @@ function displayWeather(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  dateElement.innerHTML = formattedDate(response.data.dt * 1000);
+  console.log(response);
 }
 function searchCity(city) {
   let apiKey = "6ce7450f789843d1a9368eb2e4d194d8";
@@ -100,10 +86,6 @@ function displayCelius(event) {
   temperatureElement.innerHTML = Math.round(celiusTemperature);
 }
 let celiusTemperature = null;
-
-let dateApp = document.querySelector("#date");
-let currentTime = new Date();
-dateApp.innerHTML = formattedDate(currentTime);
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
