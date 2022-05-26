@@ -61,55 +61,33 @@
         <div class="row">
           <div class="col-6">
             <div class="d-flex weather-temperature">
-              <img
-                src="#"
-                alt="sunny_icon"
-                id="icon"
-                class="weather-icon"
-              />
-                <div class="temperature" id="temperature"></div>
-                <span class="units">
-                  <a href="#" class="active" id="celcius-link">℃ |</a>
-                  <a href="#" class="active" id="fahrenheit-link">℉</a>
-                </span>     
-                 </div>
+              <img src="#" alt="sunny_icon" id="icon" class="weather-icon" />
+
+              <div class="temperature" id="temperature"></div>
+              <span class="unit">℃</span>
+            </div>
           </div>
-        <div class="col-6">
-          <ul class="weather-conditions">
-            <li>Humidity: <span id="humidity"></span> :%</li>
-            <li>Wind: <span id="wind"></span> mph</li>
-          </ul>
-          <div class="windHumidityButtons">
-            <button class="temperatureButton">Temperature</button>
-            <button class="humidButton">Humidity</button>
-            <button class="windButton">Wind</button>
+          <div class="col-6">
+            <ul class="weather-conditions">
+              <li>Humidity: <span id="humidity"></span> :%</li>
+              <li>Wind: <span id="wind"></span> mph</li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="future-forecast" id="future-forecast">
-        <div class="row">
-          <div class="col-2">
-            <div class="future-forecast-date">Thur</div>
-            <img
-              src="http://openweathermap.org/img/wn/02d@2x.png"
-              alt="futureTemperature"
-              class="future-forecast-icon"
-              width="50px"
-            />
-            <span class="max-temperature">18°</span>
-            <span class="min-temperature">12°</span>
+        <div class="future-forecast" id="future-forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="future-forecast-date"></div>
+              <span class="max-temperature"></span>
+              <span class="min-temperature"></span>
           </div>
         </div>
       </div>
     </div>
-    <p>
-      <small>
-        <a href="https://github.com/Tanaz2202/my-weather-app"
-          >Open Source Code</a
-        >
-        by Tanaz Nejad
-      </small>
-    </p>
+    <footer>
+      <a href="https://github.com/Tanaz2202/my-weather-app">Open Source Code</a>
+      by Tanaz Nejad
+    </footer>
     <script src="src/script.js"></script>
   </body>
 </html>

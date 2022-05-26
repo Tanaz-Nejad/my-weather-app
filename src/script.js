@@ -46,7 +46,7 @@ function displayForecast(response) {
               }@2x.png"
               alt="futureTemperature"
               class="future-forecast-icon"
-              width="50px"
+              width="40px"
             />
         <div class="weather-forecast-temperature">
    <span class="max-temperature">${Math.round(forecastDay.temp.max)}°</span>
@@ -88,6 +88,7 @@ function displayWeather(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
   dateElement.innerHTML = formattedDate(response.data.dt * 1000);
+  getForecast(response.data.coord);
 }
 function searchCity(city) {
   let apiKey = "6ce7450f789843d1a9368eb2e4d194d8";
@@ -113,34 +114,10 @@ function getCurrentPosition(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-function displayFahrenheit(event) {
-  event.preventDefault();
-  celiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let fahrenheitTemperature = (celiusTemperature * 9) / 5 + 32;
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-function displayCelius(event) {
-  event.preventDefault();
-  celiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celiusTemperature);
-}
-let celiusTemperature = null;
-
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
 let showCurrentPosition = document.querySelector("#current-location-button");
 showCurrentPosition.addEventListener("click", getCurrentPosition);
-
-let celiusLink = document.querySelector("#celcius-link");
-celiusLink.addEventListener("click", displayCelius);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheit);
 
 searchCity("London");
