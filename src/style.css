@@ -13,9 +13,10 @@ ul {
   margin: 6px;
   padding: 0;
 }
-footer {
-  font-size: 12px;
-  text-align: center;
+small {
+  position: relative;
+  right: -200px;
+  top: -15px;
 }
 .weather-app {
   background: #fff;
@@ -68,8 +69,9 @@ footer {
   right: -32px;
 }
 .cityInput {
-  border: 2px solid #eaeaea;
-  box-shadow: 2px 2px 5px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px;
   width: 320px;
 }
 .submitSearch {
