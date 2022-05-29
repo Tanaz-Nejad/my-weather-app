@@ -25,27 +25,30 @@
       <div class="weather-app">
         <form id="search-form">
           <div class="row">
-            <div class="col-7">
+            <div class="col-7 searchForm">
               <input
                 type="text"
-                placeholder="Enter City"
+                placeholder="Search City"
                 class="cityInput"
                 id="city-input"
                 autofocus
                 autocomplete="off"
               />
             </div>
-            <div class="col-1">
+            <div class="col-2 searchButton">
               <input type="submit" class="submitSearch" id="submit-city" />
             </div>
-            <div class="col-2">
+            <div class="col-2 LocationButton">
               <button
                 class="currentLocationButton"
                 id="current-location-button"
               >
                 Current Location
-                <img src="img/Location_icon.png" alt="location_Icon" />
+                <img 
+                src="img/Location_icon.png" 
+                alt="location_Icon" />
               </button>
+            </form>
             </div>
           </div>
         </form>
@@ -61,16 +64,34 @@
         <div class="row">
           <div class="col-6">
             <div class="d-flex weather-temperature">
-              <img src="#" alt="sunny_icon" id="icon" class="weather-icon" />
-
-              <div class="temperature" id="temperature"></div>
-              <span class="unit">℃</span>
+              <img 
+              src="#" 
+              alt="sunny_icon" 
+              id="icon" 
+              class="weather-icon" />
+              <div 
+              class="temperature" 
+              id="temperature">
+            </div>
+              <span 
+              class="unit">
+              ℃
+            </span>
             </div>
           </div>
           <div class="col-6">
             <ul class="weather-conditions">
-              <li>Humidity: <span id="humidity"></span> :%</li>
-              <li>Wind: <span id="wind"></span> mph</li>
+              <li>
+                <strong>Humidity:</strong>
+                <span 
+                id="humidity">
+              </span>
+              %</li>
+              <li>
+                <strong>Wind:</strong> 
+                <span id="wind">
+                </span>mph
+              </li>
             </ul>
           </div>
         </div>
@@ -85,7 +106,11 @@
       </div>
     </div>
     <footer>
-      <a href="https://github.com/Tanaz2202/my-weather-app">Open Source Code</a>
+      <a 
+      href="https://github.com/Tanaz2202/my-weather-app" 
+      target="_blank">
+      Open Source Code
+    </a>
       by Tanaz Nejad
     </footer>
     <script src="src/script.js"></script>
